@@ -4,7 +4,7 @@ body {
   color: white;
   margin: 0;
   font-size: 20px;
-  font-family: 'Avenir', Arial, sans-serif;
+  font-family: 'Bree Serif', serif;
 }
 
 //Header
@@ -23,8 +23,8 @@ body {
     #logo-link {
       display: block;
       letter-spacing: 5px;
-      font-size: 35px;
-      font-family: 'Bree Serif', serif;
+      font-size: 40px;
+      //font-family: 'Bree Serif', serif;
     }
     #lassName {
       font-weight: bold;
@@ -34,7 +34,8 @@ body {
 
   #nav {
     margin-left: auto;
-    font-family: 'Bree Serif', serif;
+    // font-family: 'Bree Serif', serif;
+    //font-weight: bold;
     padding-right: 50px;
     .navLink {
       color: black;

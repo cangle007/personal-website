@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 
 export default class HomeComponent extends Component {
   constructor(props) {
@@ -13,6 +15,11 @@ export default class HomeComponent extends Component {
   };
 
   render() {
-    return <div className="container">HELLO</div>;
+    return (
+      <div className="container">
+        <Header />
+        <Footer />
+      </div>
+    );
   }
 }

@@ -18,26 +18,26 @@ export default class HeaderComponent extends Component {
   render() {
     let { ariaExpanded } = this.state;
     return (
-      <div className="wrapper">
+      <div className="wrapper-header">
         <header className="header">
-          <div className="header--inner">
+          <div className="header-inner">
             <span id="logo">
-              <a id="logo--link">
+              <a id="logo-link">
                 Cang <span id="lassName">Le</span>
               </a>
             </span>
             <nav id="nav">
               <ul>
-                <a class="nav--link" href="#">
+                <a class="navLink" href="#">
                   Home
                 </a>
-                <a class="nav--link" href="#">
+                <a class="navLink" href="#">
                   About
                 </a>
-                <a class="nav--link" href="#">
+                <a class="navLink" href="#">
                   Contacts
                 </a>
-                <a class="nav--link" href="#">
+                <a class="navLink" href="#">
                   Linkedin
                 </a>
                 {/* <button

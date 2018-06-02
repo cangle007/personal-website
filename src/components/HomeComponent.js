@@ -13,10 +13,6 @@ export default class HomeComponent extends Component {
   };
 
   render() {
-    return (
-      <div>
-        <p>{this.state.placeholder}</p>
-      </div>
-    );
+    return <div className="container">HELLO</div>;
   }
 }

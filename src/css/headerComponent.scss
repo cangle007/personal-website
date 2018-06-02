@@ -1,15 +1,15 @@
-// $header-bg-color: #00a096;
 $header-bg-color: white;
 
 body {
+  color: white;
   margin: 0;
   font-size: 20px;
   font-family: 'Avenir', Arial, sans-serif;
 }
 
 //Header
-.wrapper {
-  .header--inner {
+.wrapper-header {
+  .header-inner {
     border: 1px solid black;
     height: 90px;
     display: flex;
@@ -20,7 +20,7 @@ body {
   #logo {
     padding-left: 20px;
     color: black;
-    #logo--link {
+    #logo-link {
       display: block;
       letter-spacing: 5px;
       font-size: 35px;
@@ -36,7 +36,7 @@ body {
     margin-left: auto;
     font-family: 'Bree Serif', serif;
     padding-right: 50px;
-    .nav--link {
+    .navLink {
       color: black;
       padding: 0.5rem 1rem;
       text-decoration: none;

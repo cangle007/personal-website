@@ -8,8 +8,8 @@ export default class FooterComponent extends Component {
 
   render() {
     return (
-      <div className="container">
-        <footer className="footer">
+      <div>
+        <footer className="wrapper-footer">
           <div className="connect">
             <p>CONNECT</p>
             <ul>

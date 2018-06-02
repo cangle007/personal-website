@@ -20,7 +20,7 @@ export default class App extends Component {
             <Switch>
               <Route
                 exact
-                path="/home"
+                path="/"
                 component={HomeContainer}
                 history={history}
               />
@@ -32,7 +32,7 @@ export default class App extends Component {
               />
               <Route
                 exact
-                path="/"
+                path="/footer"
                 component={FooterContainer}
                 history={history}
               />

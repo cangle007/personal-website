@@ -7,6 +7,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import HomeContainer from './redux/containers/HomeContainer';
 import FooterContainer from './redux/containers/FooterContainer';
 import HeaderContainer from './redux/containers/HeaderContainer';
+import HeaderImageContainer from './redux/containers/HeaderImageContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -20,8 +21,14 @@ export default class App extends Component {
             <Switch>
               <Route
                 exact
-                path="/"
+                path="/home"
                 component={HomeContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/"
+                component={HeaderImageContainer}
                 history={history}
               />
               <Route

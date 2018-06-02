@@ -19,7 +19,7 @@ export default class HeaderComponent extends Component {
     let { ariaExpanded } = this.state;
     return (
       <div className="wrapper-header">
-        <header className="header">
+        <header>
           <div className="header-inner">
             <span id="logo">
               <a id="logo-link">

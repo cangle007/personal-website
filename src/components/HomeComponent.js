@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
+import HeaderImage from './HeaderImageComponent';
 import Footer from './FooterComponent';
 
 export default class HomeComponent extends Component {
@@ -18,6 +19,9 @@ export default class HomeComponent extends Component {
     return (
       <div className="container">
         <Header />
+
+        <HeaderImage />
+
         <Footer />
       </div>
     );

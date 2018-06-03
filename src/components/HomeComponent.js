@@ -4,6 +4,9 @@ import HeaderComponent from './HeaderComponent';
 import HeaderImageComponent from './HeaderImageComponent';
 import Parallax01Component from './Parallax01Component';
 import FooterComponent from './FooterComponent';
+//import Recommendation01Component from './Recommendation01Component';
+//import Recommendation02Component from './Recommendation02Component';
+import SliderComponent from './SliderComponent';
 
 export default class HomeComponent extends Component {
   constructor(props) {
@@ -13,10 +16,6 @@ export default class HomeComponent extends Component {
     };
   }
 
-  placeholderFunction = () => {
-    return this.state.placeholder;
-  };
-
   render() {
     return (
       <div className="container">
@@ -25,6 +24,7 @@ export default class HomeComponent extends Component {
         <HeaderImageComponent />
 
         <Parallax01Component />
+        <SliderComponent />
 
         <FooterComponent />
       </div>

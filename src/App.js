@@ -9,7 +9,8 @@ import FooterContainer from './redux/containers/FooterContainer';
 import HeaderContainer from './redux/containers/HeaderContainer';
 import HeaderImageContainer from './redux/containers/HeaderImageContainer';
 import Parallax01Container from './redux/containers/Parallax01Container';
-import RecommendationContainer from './redux/containers/RecommendationContainer';
+import Recommendation01Container from './redux/containers/Recommendation01Container';
+import SliderContainer from './redux/containers/SliderContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -29,8 +30,14 @@ export default class App extends Component {
               />
               <Route
                 exact
+                path="/slider"
+                component={SliderContainer}
+                history={history}
+              />
+              <Route
+                exact
                 path="/recon"
-                component={RecommendationContainer}
+                component={Recommendation01Container}
                 history={history}
               />
               <Route

@@ -1,10 +1,10 @@
 import React from 'react';
 import HomeComponent from './HomeComponent';
 
-export default function HomePage({ placeholder }) {
+export default function HomePage({ logoImages }) {
   return (
     <div>
-      <HomeComponent placeholder={placeholder} />
+      <HomeComponent logoImages={logoImages} />
     </div>
   );
 }

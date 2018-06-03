@@ -1,7 +1,7 @@
 import { compose, lifecycle } from 'recompose';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import RecommendationPage from '../../components/RecommendationPage';
+import Recommendation01Page from '../../components/Recommendation01Page';
 
 function mapStateToProps(state, ownProps) {
   return {};
@@ -18,5 +18,5 @@ const withlifecycle = lifecycle({
 const connectToStore = connect(mapStateToProps, mapDispatchToProps);
 
 export default compose(connectToStore, withlifecycle)(
-  withRouter(RecommendationPage)
+  withRouter(Recommendation01Page)
 );

@@ -3,8 +3,8 @@ $header-bg-color: rgba(0, 0, 0, 0.1);
 body {
   color: black;
   margin: 0;
-  font-size: 20px;
-  font-family: 'Bree Serif', serif;
+  //font-size: 20px;
+  //font-family: 'Bree Serif', serif;
 }
 
 //Header
@@ -42,8 +42,9 @@ body {
 
   #nav {
     margin-left: auto;
-    // font-family: 'Bree Serif', serif;
+    font-family: 'Bree Serif', serif;
     //font-weight: bold;
+    font-size: 20px;
     padding-right: 50px;
     .navLink {
       color: white;

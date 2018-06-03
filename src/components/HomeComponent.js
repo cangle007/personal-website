@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
-import HeaderImage from './HeaderImageComponent';
-import Footer from './FooterComponent';
+
+import HeaderComponent from './HeaderComponent';
+import HeaderImageComponent from './HeaderImageComponent';
+import Parallax01Component from './Parallax01Component';
+import FooterComponent from './FooterComponent';
 
 export default class HomeComponent extends Component {
   constructor(props) {
@@ -18,11 +20,13 @@ export default class HomeComponent extends Component {
   render() {
     return (
       <div className="container">
-        <Header />
+        <HeaderComponent />
 
-        <HeaderImage />
+        <HeaderImageComponent />
 
-        <Footer />
+        <Parallax01Component />
+
+        <FooterComponent />
       </div>
     );
   }

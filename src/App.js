@@ -8,6 +8,8 @@ import HomeContainer from './redux/containers/HomeContainer';
 import FooterContainer from './redux/containers/FooterContainer';
 import HeaderContainer from './redux/containers/HeaderContainer';
 import HeaderImageContainer from './redux/containers/HeaderImageContainer';
+import Parallax01Container from './redux/containers/Parallax01Container';
+import RecommendationContainer from './redux/containers/RecommendationContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -23,6 +25,18 @@ export default class App extends Component {
                 exact
                 path="/home"
                 component={HomeContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/recon"
+                component={RecommendationContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/par"
+                component={Parallax01Container}
                 history={history}
               />
               <Route

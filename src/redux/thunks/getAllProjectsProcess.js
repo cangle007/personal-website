@@ -1,9 +1,9 @@
-import pokemonBattle from '../../images/pokemonBattle.jpg';
-import userProfile from '../../images/userProfile.jpg';
-import toDos from '../../images/toDos.jpg';
-import gmailInbox from '../../images/gmailInbox.jpg';
-import pixelArt from '../../images/pixelArt.jpg';
-import responsiveWeb from '../../images/responsiveWeb.jpg';
+import pokemonBattle from '../../images/pokemonBattle.png';
+import userProfile from '../../images/userProfile.png';
+import toDos from '../../images/toDos.png';
+import gmailInbox from '../../images/gmailInbox.png';
+import pixelArt from '../../images/pixelArt.png';
+import responsiveWeb from '../../images/responsiveWeb.png';
 
 export default function getAllProjectsProcess() {
   return (dispatch, getState) => {
@@ -15,12 +15,11 @@ export default function getAllProjectsProcess() {
         hover: 'hidden-pokemonBattle'
       },
       {
-        file: userProfile,
+        file: toDos,
         display: 'mobile',
-        name: 'userProfile',
-        hover: 'hidden-userProfile'
+        name: 'toDos',
+        hover: 'hidden-toDos'
       },
-      { file: toDos, display: 'mobile', name: 'toDos', hover: 'hidden-toDos' },
       {
         file: gmailInbox,
         display: 'website',
@@ -34,19 +33,17 @@ export default function getAllProjectsProcess() {
         hover: 'hidden-pixelArt'
       },
       {
+        file: userProfile,
+        display: 'mobile',
+        name: 'userProfile',
+        hover: 'hidden-userProfile'
+      },
+      {
         file: responsiveWeb,
         display: 'website & mobile',
         name: 'responsiveWeb',
         hover: 'hidden-responsiveWeb'
       }
-      // userProfile,
-      // toDos,
-      // gmailInbox,
-      // pixelArt,
-      // responsiveWeb,
-      // pokemonBattle,
-      // pokemonBattle,
-      // pokemonBattle
     ];
     dispatch({ type: 'GET_ALL_PROJECTS', projects: arr });
   };

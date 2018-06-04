@@ -7,8 +7,6 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import HomeContainer from './redux/containers/HomeContainer';
 import FooterContainer from './redux/containers/FooterContainer';
 import HeaderContainer from './redux/containers/HeaderContainer';
-import HeaderImageContainer from './redux/containers/HeaderImageContainer';
-import Parallax01Container from './redux/containers/Parallax01Container';
 import Recommendation01Container from './redux/containers/Recommendation01Container';
 import SliderContainer from './redux/containers/SliderContainer';
 import ProjectsContainer from './redux/containers/ProjectsContainer';
@@ -45,18 +43,6 @@ export default class App extends Component {
                 exact
                 path="/recon"
                 component={Recommendation01Container}
-                history={history}
-              />
-              <Route
-                exact
-                path="/par"
-                component={Parallax01Container}
-                history={history}
-              />
-              <Route
-                exact
-                path="/img"
-                component={HeaderImageContainer}
                 history={history}
               />
               <Route

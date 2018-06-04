@@ -1,12 +1,12 @@
 export default function rootReducer(
   currentState = {
-    logoImages: []
+    projects: ''
   },
   action
 ) {
   switch (action.type) {
-    case 'GET_LOGOS_SUCCESS':
-      return { ...currentState, logoImages: action.logoImages };
+    case 'GET_ALL_PROJECTS':
+      return { ...currentState, projects: action.projects };
 
     default:
       return currentState;

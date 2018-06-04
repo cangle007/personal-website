@@ -15,12 +15,13 @@ export default class HomeComponent extends Component {
   }
 
   render() {
+    let { projects } = this.props;
     return (
       <div className="container">
         <HeaderComponent />
 
         <HeaderImageComponent />
-        <ProjectsComponent />
+        <ProjectsComponent projects={projects} />
         <Parallax01Component />
         <SliderComponent />
 

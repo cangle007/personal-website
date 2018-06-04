@@ -23,7 +23,7 @@ export default class HeaderComponent extends Component {
           <div className="header-inner">
             <span id="logo">
               <a id="logo-link">
-                Cang <span id="lassName">Le</span>
+                CANG <span id="lassName">LE</span>
               </a>
             </span>
             <nav id="nav">

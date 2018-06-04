@@ -4,25 +4,90 @@
   padding-top: 100px;
   padding-bottom: 100px;
   div {
-    border: 1px solid black;
+    //border: 1px solid black;
   }
 
   #middle-side {
-    grid-template-areas:
-      '1 2 3'
-      '4 5 6'
-      '7 8 9';
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(3, auto);
-    //border: 1px solid black;
+    grid-template-areas:
+      '1 2 3'
+      '4 5 6';
     height: 1000px;
     width: 100%;
     text-align: center;
-    // background-size: cover;
+
+    h2 {
+      text-transform: capitalize;
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    font-family: 'Patrick Hand';
+    line-height: 90%;
   }
-  img {
-    padding-top: 60px;
-    //background-size: 100% 100%;
+
+  @media (max-width: 700px) {
+    #middle-side {
+      grid-template-areas:
+        '1 2'
+        '3 4'
+        '5 6';
+    }
   }
+
+  @media (max-width: 500px) {
+    #middle-side {
+      grid-template-areas:
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6';
+    }
+  }
+}
+
+.hidden-pokemonBattle {
+  color: black;
+}
+.pokemonBattle:hover .hidden-pokemonBattle {
+  color: red;
+}
+
+.hidden-userProfile {
+  color: black;
+}
+.userProfile:hover .hidden-userProfile {
+  color: red;
+}
+
+.hidden-toDos {
+  color: black;
+}
+.toDos:hover .hidden-toDos {
+  color: red;
+}
+
+.hidden-gmailInbox {
+  color: black;
+}
+.gmailInbox:hover .hidden-gmailInbox {
+  color: red;
+}
+
+.hidden-pixelArt {
+  color: black;
+}
+.pixelArt:hover .hidden-pixelArt {
+  color: red;
+}
+
+.hidden-responsiveWeb {
+  color: black;
+}
+.responsiveWeb:hover .hidden-responsiveWeb {
+  color: red;
 }

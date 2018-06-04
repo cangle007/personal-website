@@ -17,11 +17,12 @@
 }
 
 .wrapper-recommendation {
-  min-height: 400px;
+  min-height: 500px;
   text-align: center;
   position: relative;
   p {
     letter-spacing: 1px;
+    font-size: 20px;
   }
 
   .inner {
@@ -35,16 +36,17 @@
       'Lucida Sans';
     #recommendations-par {
       line-height: 1.4;
-      font-size: 18px;
+      font-size: 27px;
     }
 
     h3 {
       font-family: 'Bree Serif', serif;
-      //font-size: 20px;
+      font-size: 25px;
     }
-    #recon-name {
+    #recon-title {
       line-height: 0.01;
       font-family: 'Bree Serif', serif;
+      font-size: 20px;
     }
   }
 }

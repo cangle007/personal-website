@@ -12,7 +12,7 @@ export default function Recommendation02Component() {
             talent as Cang. He would make for a strong addition to any team."
           </p>
           <h3>Michael Chang</h3>
-          <p id="recon-name">Principal Software Eng. at Oracle</p>
+          <p id="recon-title">Principal Software Eng. at Oracle</p>
         </div>
       </section>
     </div>

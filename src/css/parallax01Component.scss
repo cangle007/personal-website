@@ -1,14 +1,14 @@
 .wrapper-parallax01 {
   background: url(../images/para01.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   .inner {
     min-height: 200px;
     position: relative;
-    background: rgba(0, 0, 0, 0.5)
-      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC)
-      repeat;
+    // background: rgba(0, 0, 0, 0.5)
+    //   url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC)
+    //   repeat;
   }
 
   .parallax01-mgs {

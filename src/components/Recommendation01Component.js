@@ -13,7 +13,7 @@ export default function Recommendation01Component() {
             team member of South Valley Angels."
           </p>
           <h3>Gary Jinks</h3>
-          <p id="recon-name">Managing Director at South Valley Angles</p>
+          <p id="recon-title">Managing Director at South Valley Angles</p>
         </div>
       </section>
     </div>

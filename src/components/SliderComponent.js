@@ -13,7 +13,6 @@ export default class SliderComponent extends Component {
 
   recomComponentsArr = () => {
     const { index } = this.state;
-
     if (index === 0) {
       return <Recommendation02Component />;
     }

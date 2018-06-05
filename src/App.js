@@ -10,6 +10,7 @@ import HeaderContainer from './redux/containers/HeaderContainer';
 import Recommendation01Container from './redux/containers/Recommendation01Container';
 import SliderContainer from './redux/containers/SliderContainer';
 import ProjectsContainer from './redux/containers/ProjectsContainer';
+import AboutMeContainer from './redux/containers/AboutMeContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -25,6 +26,12 @@ export default class App extends Component {
                 exact
                 path="/home"
                 component={HomeContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/about"
+                component={AboutMeContainer}
                 history={history}
               />
               <Route

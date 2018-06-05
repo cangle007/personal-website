@@ -35,7 +35,7 @@ export default class HeaderComponent extends Component {
                   About
                 </a>
                 <a class="navLink" href="#">
-                  Contacts
+                  Contact
                 </a>
                 <a class="navLink" href="#">
                   Linkedin

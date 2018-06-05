@@ -1,0 +1,107 @@
+.wrapper-AboutMe {
+  display: grid;
+  //text-align: center;
+  grid-template-columns: 1fr;
+  letter-spacing: 1px;
+  font-family: 'Quicksand';
+
+  div {
+    //border: 1px solid black;
+  }
+}
+
+.middle-side-grid {
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.aboutMe-grid {
+  display: grid;
+  grid-template-areas:
+    'aboutMe-img'
+    'aboutMe-bio';
+  grid-template-columns: 1fr auto;
+  font-size: 16px;
+  grid-gap: 20px;
+  #aboutMe-img {
+    object-fit: cover;
+    //width: 100%;
+    width: 400px;
+    max-height: 100%;
+    background: url(../images/aboutMe01.png);
+    background-size: cover;
+  }
+  #aboutMe-bio {
+    h3 {
+      text-align: center;
+    }
+    text-align: justify;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutMe-grid {
+    grid-template-areas:
+      'aboutMe-img'
+      'aboutMe-bio';
+  }
+}
+
+.expertiseNexperience {
+  padding-top: 100px;
+}
+.expertise-grid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas: 'Front-End Back-End Others Awards';
+  padding-left: 100px;
+  padding-bottom: 100px;
+  .Awards,
+  .Back-End,
+  .Front-End,
+  .Others {
+    ul {
+      line-height: 200%;
+      list-style-type: none;
+    }
+    h3 {
+      //text-align: center;
+    }
+  }
+}
+
+.wrapper-parallax02 {
+  background: url(../images/halfdome01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 250px;
+  .parallax02-mgs {
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    //top: 90%;
+    //width: 100%;
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 50px;
+    }
+  }
+}
+
+.funFacts {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p {
+    font-size: 20px;
+    font-family: 'Quicksand';
+  }
+  p:nth-child(3) {
+    font-weight: bold;
+  }
+}

@@ -7,6 +7,7 @@ import './css/footerComponent.min.css';
 import './css/parallax01Component.min.css';
 import './css/recommendationComponent.min.css';
 import './css/projectsComponent.min.css';
+import './css/AboutMeComponent.min.css';
 
 import App from './App';
 

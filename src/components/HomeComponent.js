@@ -19,12 +19,10 @@ export default class HomeComponent extends Component {
     return (
       <div className="container">
         <HeaderComponent />
-
         <HeaderImageComponent />
         <ProjectsComponent projects={projects} />
         <Parallax01Component />
         <SliderComponent />
-
         <FooterComponent />
       </div>
     );

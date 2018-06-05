@@ -23,7 +23,7 @@ export default function getAllProjectsProcess() {
       {
         file: gmailInbox,
         display: 'website',
-        name: 'gmailInbox',
+        name: 'gmail-Inbox',
         hover: 'hidden-gmailInbox'
       },
       {

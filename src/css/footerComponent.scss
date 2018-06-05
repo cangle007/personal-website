@@ -31,15 +31,20 @@
 
 @media (max-width: 700px) {
   .footer-grid {
-    #footer-connect {
-      padding-left: 130px;
-      text-align: center;
-    }
-    #footer-create {
-      display: none;
-    }
-    grid-template-areas:
-      'footer-connect'
-      'footer-create';
+    display: none;
   }
 }
+// @media (max-width: 700px) {
+//   .footer-grid {
+//     #footer-connect {
+//       padding-left: 130px;
+//       text-align: center;
+//     }
+//     #footer-create {
+//       display: none;
+//     }
+//     grid-template-areas:
+//       'footer-connect'
+//       'footer-create';
+//   }
+// }

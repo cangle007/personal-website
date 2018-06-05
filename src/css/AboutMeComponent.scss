@@ -36,6 +36,10 @@
   }
 }
 @media (max-width: 700px) {
+  .aboutMe-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .aboutMe-grid {
     grid-template-areas:
       'aboutMe-bio'
@@ -44,7 +48,6 @@
 }
 
 //EXPERTISE AND EXPERIENCE
-
 .expertise-container {
   padding-left: 150px;
   padding-right: 150px;
@@ -119,5 +122,12 @@
   }
   p:nth-child(3) {
     font-weight: bold;
+  }
+}
+
+@media (max-width: 700px) {
+  #funFacts {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

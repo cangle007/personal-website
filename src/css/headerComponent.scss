@@ -4,66 +4,165 @@ $header-nav-text-size: 25px;
 // $header-transparent: rgba(0, 0, 0, 0.5);
 $header-transparent: white;
 body {
-  color: black;
   margin: 0;
 }
 
-//Header
-.wrapper-header {
-  z-index: 1;
+.header-container {
   position: fixed;
   width: 100%;
   height: 100px;
   background: $header-transparent;
-  color: black;
-  .header-inner {
-    padding-top: 22px;
-    color: black;
-    // background: $header-transparent;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
+}
 
-  #logo {
-    padding-left: 50px;
-    #logo-link {
-      //color: $header-logo-text-color;
-      display: block;
-      letter-spacing: 2px;
-      font-family: 'Quicksand';
-      font-size: 50px;
-    }
-    #lassName {
-      font-weight: bold;
-      //color: red;
+.header-grid {
+  display: grid;
+  grid-template-areas: 'full-name-logo navi';
+  grid-template-columns: repeat(2, 1fr);
+  //border: 1px solid black;
+  #full-name-logo {
+    grid-area: full-name-logo;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    //background-color: blue;
+    font-size: 45px;
+    text-align: center;
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
   }
+  #navi {
+    grid-area: navi;
+    //background-color: yellow;
+  }
+}
 
-  #nav {
-    margin-left: auto;
-    //font-family: 'Bree Serif', serif;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 1px;
-    font-size: $header-nav-text-size;
-    padding-right: 50px;
-    .navLink {
-      color: $header-nav-text;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      &:hover {
-        color: red;
-      }
+.navi-grid {
+  display: grid;
+  grid-template-areas: 'navi-home navi-about navi-contact navi-LinkedIn';
+  grid-template-columns: repeat(4, 1fr);
+  //border: 1px solid black;
+  margin-left: 400px;
+  a {
+    //border: 1px solid red;
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .naviLink {
+    color: $header-nav-text;
+    &:hover {
+      color: red;
     }
+  }
+  #navi-home {
+    grid-area: navi-home;
+  }
+  #navi-about {
+    grid-area: navi-about;
+  }
+  #navi-contact {
+    grid-area: navi-contact;
+  }
+  #navi-LinkedIn {
+    grid-area: navi-LinkedIn;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-grid {
+    #full-name-logo {
+      height: 60px;
+    }
+    grid-template-areas:
+      'full-name-logo'
+      'navi';
+  }
+}
+
+@media (max-width: 700px) {
+  .navi-grid {
+    margin-left: 0;
+    a {
+      padding-top: 0;
+    }
+    grid-template-areas:
+      'navi-home navi-about'
+      'navi-contact'
+      'navi-LinkedIn';
   }
 }
 
 // [aria-controls='header-list'] {
 //   display: none;
 // }
+
+// $header-logo-text-color: black;
+// $header-nav-text: black;
+// $header-nav-text-size: 25px;
+// // $header-transparent: rgba(0, 0, 0, 0.5);
+// $header-transparent: white;
+// body {
+//   color: black;
+//   margin: 0;
+// }
+//
+// //Header
+// .wrapper-header {
+//   z-index: 1;
+//   position: fixed;
+//   width: 100%;
+//   height: 100px;
+//   background: $header-transparent;
+//   .header-container {
+//     display: flex;
+//     height: 90px;
+//     padding-top: 22px;
+//     //align-items: center;
+//     text-decoration: none;
+//     // background: $header-transparent;
+//   }
+//
+//   #logo {
+//     padding-left: 50px;
+//     #logo-link {
+//       display: block;
+//       letter-spacing: 2px;
+//       font-family: 'Quicksand';
+//       font-size: 50px;
+//     }
+//     #lassName {
+//       font-weight: bold;
+//     }
+//   }
+//
+//   .nav {
+//     margin-left: auto;
+//     font-family: 'Quicksand', sans-serif;
+//     letter-spacing: 1px;
+//     font-size: $header-nav-text-size;
+//     padding-right: 50px;
+//     .navLink {
+//       color: $header-nav-text;
+//       padding: 0.5rem 1rem;
+//       text-decoration: none;
+//       &:hover {
+//         color: red;
+//       }
+//     }
+//   }
+// }
+//
+// //HEADER LIST DISPLAY WHEN SCALE DOWN
+// [aria-controls='header-list'] {
+//   display: none;
+// }
+//
 // @media (max-width: 1000px) {
-//   .header {
+//   .nav {
 //     order: -1;
 //     perspective: 800px;
 //   }
@@ -73,7 +172,7 @@ body {
 //     margin-bottom: 10px;
 //   }
 //
-//   .header ul {
+//   .nav ul {
 //     max-height: 0;
 //     overflow: hidden;
 //     transform: rotateX(90deg);

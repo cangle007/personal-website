@@ -23,7 +23,7 @@ export default class AboutMeComponent extends Component {
     return (
       <div className="wrapper-AboutMe">
         <HeaderComponent />
-        <div className="middle-side-grid">
+        <div className="aboutMe-container">
           <div className="aboutMe-grid">
             <div id="aboutMe-img">
               {/* <img alt="cang" id="aboutMe-photo" src={aboutMe} /> */}
@@ -62,9 +62,11 @@ export default class AboutMeComponent extends Component {
               </div>
             </div>
           </div>
-          <Divider className="expertiseNexperience" horizontal>
-            EXPERTISE AND EXPERIENCE
-          </Divider>
+        </div>
+        <Divider className="expertise-divider" horizontal>
+          EXPERTISE AND EXPERIENCE
+        </Divider>
+        <div className="expertise-container">
           <div className="expertise-grid">
             <div className="Front-End">
               <ul>
@@ -101,21 +103,25 @@ export default class AboutMeComponent extends Component {
             </div>
           </div>
         </div>
-        <section className="wrapper-parallax02" id="parallax02">
-          <div className="inner">
+
+        <div className="parallax01-container">
+          <section className="aboutMe-parallax01" id="parallax02">
             <div className="parallax02-mgs">
               <h1>San Jose, Ca</h1>
             </div>
+          </section>
+        </div>
+
+        <div className="funFacts-container">
+          <div id="funFacts">
+            <p>
+              When I am not coding I train at the gym to shape up for the
+              Ironman Triathlon, and occasionally skydive. I believe in having
+              an efficient workflow and constantly work toward the inbox zero.
+            </p>
+            <br />
+            <p id="getInTouch">Get in touch!</p>
           </div>
-        </section>
-        <div className="funFacts">
-          <p>
-            When I am not coding I train at the gym to shape up for the Ironman
-            Triathlon, and occasionally skydive. I believe in having an
-            efficient workflow and constantly work toward the inbox zero.
-          </p>
-          <br />
-          <p id="getInTouch">Get in touch!</p>
         </div>
         <FooterComponent />
       </div>

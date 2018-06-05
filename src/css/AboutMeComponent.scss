@@ -1,78 +1,94 @@
 .wrapper-AboutMe {
-  display: grid;
-  //text-align: center;
-  grid-template-columns: 1fr;
-  letter-spacing: 1px;
-  font-family: 'Quicksand';
-
-  div {
-    //border: 1px solid black;
-  }
+  //display: grid;
+  //grid-template-columns: 1fr;
+  //letter-spacing: 1px;
+  //font-family: 'Quicksand';
+  text-align: center;
 }
 
-.middle-side-grid {
+//ABOUT ME
+.aboutMe-container {
   padding-left: 150px;
   padding-right: 150px;
-  text-align: center;
   padding-top: 150px;
 }
 
 .aboutMe-grid {
   display: grid;
-  grid-template-areas:
-    'aboutMe-img'
-    'aboutMe-bio';
+  grid-template-areas: 'aboutMe-img aboutMe-bio';
   grid-template-columns: 1fr auto;
-  font-size: 16px;
   grid-gap: 20px;
+  font-size: 16px;
   #aboutMe-img {
-    object-fit: cover;
-    //width: 100%;
+    grid-area: aboutMe-img;
+    //object-fit: cover;
     width: 400px;
     max-height: 100%;
     background: url(../images/aboutMe01.png);
     background-size: cover;
   }
   #aboutMe-bio {
+    grid-area: aboutMe-bio;
+    text-align: justify;
     h3 {
       text-align: center;
     }
-    text-align: justify;
   }
 }
-
 @media (max-width: 700px) {
   .aboutMe-grid {
     grid-template-areas:
-      'aboutMe-img'
-      'aboutMe-bio';
+      'aboutMe-bio'
+      'aboutMe-img';
   }
 }
 
-.expertiseNexperience {
-  padding-top: 100px;
+//EXPERTISE AND EXPERIENCE
+
+.expertise-container {
+  padding-left: 150px;
+  padding-right: 150px;
 }
+
+.expertise-divider {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
 .expertise-grid {
   display: grid;
-  grid-gap: 50px;
-  grid-template-areas: 'Front-End Back-End Others Awards';
-  padding-left: 100px;
+  grid-template-areas: 'Front-End Back-End Others';
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 100px;
-  .Awards,
+  .Back-End {
+    grid-area: Back-End;
+  }
+  .Front-End {
+    grid-area: Front-End;
+  }
+  .Others {
+    grid-area: Others;
+  }
   .Back-End,
   .Front-End,
   .Others {
     ul {
-      line-height: 200%;
+      line-height: 180%;
       list-style-type: none;
-    }
-    h3 {
-      //text-align: center;
     }
   }
 }
+@media (max-width: 700px) {
+  .expertise-grid {
+    grid-template-areas:
+      'Front-End'
+      'Back-End'
+      'Others';
+  }
+}
 
-.wrapper-parallax02 {
+//PARALLAX
+.aboutMe-parallax01 {
   background: url(../images/halfdome01.jpg);
   background-size: cover;
   background-position: center;
@@ -83,8 +99,6 @@
     text-align: center;
     position: relative;
     padding-top: 100px;
-    //top: 90%;
-    //width: 100%;
     h1 {
       font-family: 'Roboto Slab', serif;
       font-size: 50px;
@@ -92,12 +106,14 @@
   }
 }
 
-.funFacts {
+//FUN FACTS
+#funFacts {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 100px;
   padding-bottom: 100px;
   p {
+    text-align: justify;
     font-size: 20px;
     font-family: 'Quicksand';
   }

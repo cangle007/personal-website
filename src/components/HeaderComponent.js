@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import resume from '../images/resume08.pdf';
 
 export default class HeaderComponent extends Component {
   constructor(props) {
@@ -32,8 +33,8 @@ export default class HeaderComponent extends Component {
             <a id="navi-about" className="naviLink" href="/about">
               About
             </a>
-            <a id="navi-contact" className="naviLink" href="/contact">
-              Contact
+            <a id="navi-contact" className="naviLink" href={resume} download>
+              Resume
             </a>
             <a
               id="navi-linkedIn"

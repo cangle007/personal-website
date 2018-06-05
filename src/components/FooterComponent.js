@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Icon, Divider } from 'semantic-ui-react';
 
 export default class FooterComponent extends Component {
   constructor(props) {
@@ -13,22 +14,15 @@ export default class FooterComponent extends Component {
           <div id="footer-connect">
             <p>CONNECT</p>
             <br />
-            <p>
-              <a href="mailto:cang.b.le@gmail.com">Email Me</a>
-            </p>
-            <p>
-              <a href="https://www.linkedin.com/in/cangle/">LinkedIn</a>
-            </p>
-            <p>
-              <a href="https://github.com/cangle007">GitHub</a>
-            </p>
-          </div>
-          <div id="footer-create">
-            <p>CREATE</p>
-            <p>
-              "Perfection is achieved, not when there <br /> is nothing more to
-              add, but when there is nothing <br />left to take away."
-            </p>
+            <a href="mailto:cang.b.le@gmail.com">
+              <Icon name="mail square" size="huge" />
+            </a>
+            <a href="https://www.linkedin.com/in/cangle/">
+              <Icon name="linkedin" size="huge" />
+            </a>
+            <a href="https://github.com/cangle007">
+              <Icon name="github" size="huge" />
+            </a>
           </div>
         </div>
       </div>

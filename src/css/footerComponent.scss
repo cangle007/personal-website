@@ -1,27 +1,18 @@
 .footer-grid {
   display: grid;
-  grid-template-areas: 'footer-connect footer-create';
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'footer-connect';
+  grid-template-columns: 1fr;
   font-size: 16px;
   background-color: black;
   color: white;
   padding: 25px;
   letter-spacing: 1px;
-  line-height: 150%;
+  height: 200px;
   #footer-connect {
-    grid-area: footer-connect;
-    padding-left: 400px;
-
-    p {
-      line-height: 50%;
-      a {
-        text-decoration: none;
-        color: white;
-        &:hover {
-          color: red;
-          cursor: pointer;
-        }
-      }
+    text-align: center;
+    a {
+      color: white;
+      padding: 10px;
     }
   }
   #footer-create {
@@ -36,15 +27,6 @@
 }
 // @media (max-width: 700px) {
 //   .footer-grid {
-//     #footer-connect {
-//       padding-left: 130px;
-//       text-align: center;
-//     }
-//     #footer-create {
-//       display: none;
-//     }
-//     grid-template-areas:
-//       'footer-connect'
-//       'footer-create';
+//     grid-template-areas: 'footer-connect';
 //   }
 // }

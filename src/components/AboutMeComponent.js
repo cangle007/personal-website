@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import aboutMe from '../images/aboutMe.jpg';
 import { Icon, Divider } from 'semantic-ui-react';
 import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';

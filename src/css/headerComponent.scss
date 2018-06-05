@@ -73,18 +73,18 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .header-grid {
     #full-name-logo {
       height: 60px;
     }
     grid-template-areas:
-      'full-name-logo'
-      'navi';
+      'full-name-logo full-name-logo'
+      'navi navi';
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .navi-grid {
     margin-left: 0;
     a {

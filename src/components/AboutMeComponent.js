@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon, Divider } from 'semantic-ui-react';
 import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
+import imgMe from '../images/aboutMe01.png';
 
 export default class AboutMeComponent extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export default class AboutMeComponent extends Component {
         <div className="aboutMe-container">
           <div className="aboutMe-grid">
             <div id="aboutMe-img">
-              {/* <img alt="cang" id="aboutMe-photo" src={aboutMe} /> */}
+              {/* <img alt="cang" id="aboutMe-photo" src={imgMe} /> */}
             </div>
             <div id="aboutMe-bio">
               <h3>About Cang Le</h3>

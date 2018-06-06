@@ -1,8 +1,9 @@
+body {
+  font-family: 'Lato', 'BlinkMacSystemFont', -apple-system, 'Roboto',
+    'Lucida Sans';
+}
+
 .wrapper-AboutMe {
-  //display: grid;
-  //grid-template-columns: 1fr;
-  //letter-spacing: 1px;
-  //font-family: 'Quicksand';
   text-align: center;
 }
 
@@ -103,21 +104,20 @@
 }
 
 //PARALLAX
-.aboutMe-parallax01 {
+.parallax02-mgs {
   background: url(../images/halfdome01.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   min-height: 250px;
-  .parallax02-mgs {
-    color: white;
-    text-align: center;
-    position: relative;
-    padding-top: 100px;
-    h1 {
-      font-family: 'Roboto Slab', serif;
-      font-size: 50px;
-    }
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px #000000;
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
   }
 }
 

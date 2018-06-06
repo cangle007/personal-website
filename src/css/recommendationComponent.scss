@@ -1,23 +1,5 @@
-.right-arrow,
-.left-arrow {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f9f9f9;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform ease-in 0.1s;
-
-  &:hover {
-    transition: transform ease-in 0.1s;
-    transform: scale(1.1);
-  }
-}
-
-.wrapper-recommendation {
-  min-height: 500px;
+.recommendation-wrapper {
+  height: 300px;
   text-align: center;
   position: relative;
   p {
@@ -25,16 +7,14 @@
     font-size: 20px;
   }
 
-  .inner {
-    margin-top: 0em;
-    margin: 0;
+  .recommendation-container {
+    //margin-top: 0em;
+    //margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Lato', 'BlinkMacSystemFont', -apple-system, 'Roboto',
-      'Lucida Sans';
-    #recommendations-par {
+    #recommendation-paragraph {
       line-height: 1.4;
       font-size: 27px;
     }
@@ -43,16 +23,27 @@
       font-family: 'Bree Serif', serif;
       font-size: 25px;
     }
-    #recon-title {
-      line-height: 0.01;
+    #recommendation-title {
       font-family: 'Bree Serif', serif;
       font-size: 20px;
+      line-height: 0.01;
     }
   }
 }
 
+#recommendation-header {
+  margin-top: 100px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
+    1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
+    3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
+    5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
 @media (max-width: 700px) {
-  .wrapper-recommendation {
+  .recommendation-wrapper {
     display: none;
   }
 }

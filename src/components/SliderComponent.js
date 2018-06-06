@@ -55,6 +55,7 @@ export default class SliderComponent extends Component {
               transform: `translateX(${translateValue}px)`,
               transition: 'transform ease-out 0.45s'
             }}>
+            <p id="recommendation-header">PERSONAL RECOMMENDATIONS</p>
             {this.recomComponentsArr()}
           </div>
         </section>

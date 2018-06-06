@@ -22,7 +22,9 @@ export default class HeaderComponent extends Component {
       <div className="header-container">
         <div className="header-grid">
           <div id="full-name-logo">
-            <a id="logo-link">CANG LE</a>
+            <a href="/home" id="logo-link">
+              CANG <span id="lastName">LE</span>
+            </a>
           </div>
           <div className="navi-grid" id="navi">
             <a id="navi-home" className="naviLink" href="/home">

@@ -105,11 +105,9 @@ export default class AboutMeComponent extends Component {
         </div>
 
         <div className="parallax01-container">
-          <section className="aboutMe-parallax01" id="parallax02">
-            <div className="parallax02-mgs">
-              <h1>San Jose, Ca</h1>
-            </div>
-          </section>
+          <div className="parallax02-mgs">
+            <h1>San Jose, Ca</h1>
+          </div>
         </div>
 
         <div className="funFacts-container">

@@ -5,6 +5,7 @@ import Parallax01Component from './Parallax01Component';
 import FooterComponent from './FooterComponent';
 import SliderComponent from './SliderComponent';
 import ProjectsComponent from './ProjectsComponent';
+import CompaniesWorked from './CompaniesWorkedComponent';
 
 export default class HomeComponent extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ export default class HomeComponent extends Component {
         <HeaderImageComponent />
         <ProjectsComponent projects={projects} />
         <Parallax01Component />
+        <CompaniesWorked />
         <SliderComponent />
         <FooterComponent />
       </div>

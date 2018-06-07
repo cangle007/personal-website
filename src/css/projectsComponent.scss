@@ -18,10 +18,6 @@
   div {
     text-align: center;
   }
-  h2 {
-    text-transform: capitalize;
-    //color: black;
-  }
   p {
     text-transform: uppercase;
     font-size: 15px;
@@ -52,32 +48,32 @@
   }
 }
 
-.pokemonBattle:hover {
+.PokemonBattle:hover {
   cursor: pointer;
   color: red;
 }
 
-.userProfile:hover {
+.UserProfile:hover {
   cursor: pointer;
   color: red;
 }
 
-.toDos:hover {
+.ToDos:hover {
   cursor: pointer;
   color: red;
 }
 
-.gmail-Inbox:hover {
+.Gmail-Inbox:hover {
   cursor: pointer;
   color: red;
 }
 
-.pixelArt:hover {
+.PixelArt:hover {
   cursor: pointer;
   color: red;
 }
 
-.responsiveWeb:hover {
+.ResponsiveWeb:hover {
   cursor: pointer;
   color: red;
 }

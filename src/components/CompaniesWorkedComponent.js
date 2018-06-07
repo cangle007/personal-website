@@ -8,7 +8,7 @@ import cgigroup from '../images/cgigroup.png';
 export default function CompaniesWorkedComponent() {
   return (
     <div className="companies-wrapper">
-      <p>COMPANIES I'VE WORKED WITH</p>
+      <p>COMPANIES I'VE WORKED FOR</p>
       <div className="companies-container">
         <div className="cgi">
           <img alt="cgigroup" src={cgigroup} />

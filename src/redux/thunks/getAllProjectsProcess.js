@@ -11,37 +11,37 @@ export default function getAllProjectsProcess() {
       {
         file: pokemonBattle,
         display: 'website',
-        name: 'pokemonBattle',
+        name: 'PokemonBattle',
         hover: 'hidden-pokemonBattle'
       },
       {
         file: toDos,
         display: 'mobile',
-        name: 'toDos',
+        name: 'ToDos',
         hover: 'hidden-toDos'
       },
       {
         file: gmailInbox,
         display: 'website',
-        name: 'gmail-Inbox',
+        name: 'Gmail-Inbox',
         hover: 'hidden-gmailInbox'
       },
       {
         file: pixelArt,
         display: 'website',
-        name: 'pixelArt',
+        name: 'PixelArt',
         hover: 'hidden-pixelArt'
       },
       {
         file: userProfile,
         display: 'mobile',
-        name: 'userProfile',
+        name: 'UserProfile',
         hover: 'hidden-userProfile'
       },
       {
         file: responsiveWeb,
         display: 'website & mobile',
-        name: 'responsiveWeb',
+        name: 'ResponsiveWeb',
         hover: 'hidden-responsiveWeb'
       }
     ];

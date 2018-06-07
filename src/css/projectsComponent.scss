@@ -20,10 +20,14 @@
   }
   h2 {
     text-transform: capitalize;
+    //color: black;
   }
   p {
     text-transform: uppercase;
     font-size: 15px;
+  }
+  a {
+    color: black;
   }
 }
 
@@ -48,51 +52,32 @@
   }
 }
 
-.hidden-pokemonBattle {
-  color: black;
-}
-// .pokemonBattle:hover .hidden-pokemonBattle,
-// .pokemonBattle {
-//   color: red;
-//   cursor: pointer;
-// }
-
-.pokemonBattle:hover .hidden-pokemonBattle {
-  color: red;
+.pokemonBattle:hover {
   cursor: pointer;
-}
-
-.hidden-userProfile {
-  color: black;
-}
-.userProfile:hover .hidden-userProfile {
   color: red;
 }
 
-.hidden-toDos {
-  color: black;
-}
-.toDos:hover .hidden-toDos {
+.userProfile:hover {
+  cursor: pointer;
   color: red;
 }
 
-.hidden-gmailInbox {
-  color: black;
-}
-.gmail-Inbox:hover .hidden-gmailInbox {
+.toDos:hover {
+  cursor: pointer;
   color: red;
 }
 
-.hidden-pixelArt {
-  color: black;
-}
-.pixelArt:hover .hidden-pixelArt {
+.gmail-Inbox:hover {
+  cursor: pointer;
   color: red;
 }
 
-.hidden-responsiveWeb {
-  color: black;
+.pixelArt:hover {
+  cursor: pointer;
+  color: red;
 }
-.responsiveWeb:hover .hidden-responsiveWeb {
+
+.responsiveWeb:hover {
+  cursor: pointer;
   color: red;
 }

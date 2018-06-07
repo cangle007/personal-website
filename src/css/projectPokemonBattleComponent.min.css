@@ -1,0 +1,1 @@
+.pokemonBattle-container{display:grid;grid-template-columns:1fr;grid-template-areas:'pokemonBattle-header' 'pokemonBattle-body1' 'pokemonBattle-body2' 'pokemonBattle-body3' 'pokemonBattle-body4'}.pokemonBattle-container div{border:1px solid black}.pokemonBattle-container #pokemonBattle-techStatus ul{list-style-type:none;float:left}

@@ -9,7 +9,6 @@ export default function CompaniesWorkedComponent() {
   return (
     <div className="companies-wrapper">
       <p>COMPANIES I'VE WORKED WITH</p>
-
       <div className="companies-container">
         <div className="cgi">
           <img alt="cgigroup" src={cgigroup} />

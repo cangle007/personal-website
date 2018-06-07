@@ -10,6 +10,7 @@ import SliderContainer from './redux/containers/SliderContainer';
 import ProjectsContainer from './redux/containers/ProjectsContainer';
 import AboutMeContainer from './redux/containers/AboutMeContainer';
 import CompaniesWorkedContainer from './redux/containers/CompaniesWorkedContainer';
+import ProjectPokemonBattleContainer from './redux/containers/ProjectPokemonBattleContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -23,8 +24,14 @@ export default class App extends Component {
             <Switch>
               <Route
                 exact
-                path="/home"
+                path="/"
                 component={HomeContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/pokemonBattle"
+                component={ProjectPokemonBattleContainer}
                 history={history}
               />
               <Route
@@ -41,7 +48,7 @@ export default class App extends Component {
               />
               <Route
                 exact
-                path="/"
+                path="/projects"
                 component={ProjectsContainer}
                 history={history}
               />

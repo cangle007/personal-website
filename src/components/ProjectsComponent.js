@@ -16,13 +16,13 @@ export default class ProjectsComponent extends Component {
           {projects &&
             projects.map((obj, i) => {
               return (
-                <div className={obj.name} id="listOfProjects" key={i}>
-                  <img className="visible" alt={obj.name} src={obj.file} />
-                  <div className={obj.hover} id="hidden">
+                <a href={'/' + obj.name} className={obj.name}>
+                  <div id="listOfProjects" key={i}>
+                    <img alt={obj.name} src={obj.file} />
                     <h2>{obj.name}</h2>
                     <p>{obj.display}</p>
                   </div>
-                </div>
+                </a>
               );
             })}
         </div>

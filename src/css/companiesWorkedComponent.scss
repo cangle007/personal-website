@@ -54,6 +54,15 @@
 }
 
 @media (max-width: 1000px) {
+  .companies-wrapper {
+    p,
+    div {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
   .companies-container {
     grid-template-areas:
       'cgi'
@@ -61,8 +70,5 @@
       'veritas'
       'wellsfargo01'
       'outside2inside';
-    // 'cgi sunedison'
-    // 'veritas wellsfargo'
-    // 'outside2inside outside2inside';
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function HeaderImageComponent() {
+export default function BannerComponent() {
   return (
     <div className="wrapper-header-img" id="header-img-1">
       <div className="inner">

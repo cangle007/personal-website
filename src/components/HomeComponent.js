@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HeaderComponent from './HeaderComponent';
-import HeaderImageComponent from './HeaderImageComponent';
+import BannerComponent from './BannerComponent';
 import Parallax01Component from './Parallax01Component';
 import FooterComponent from './FooterComponent';
 import SliderComponent from './SliderComponent';
@@ -20,7 +20,7 @@ export default class HomeComponent extends Component {
     return (
       <div className="container">
         <HeaderComponent />
-        <HeaderImageComponent />
+        <BannerComponent />
         <ProjectsComponent projects={projects} />
         <Parallax01Component />
         <CompaniesWorked />

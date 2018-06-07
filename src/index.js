@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './css/headerComponent.min.css';
-import './css/headerImageComponent.min.css';
+import './css/BannerComponent.min.css';
 import './css/footerComponent.min.css';
 import './css/parallax01Component.min.css';
 import './css/recommendationComponent.min.css';

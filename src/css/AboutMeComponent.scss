@@ -20,12 +20,13 @@ body {
   grid-template-columns: 1fr auto;
   //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); same style as above?
   grid-gap: 20px;
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
   #aboutMe-img {
     grid-area: aboutMe-img;
     object-fit: cover;
     width: 400px;
-    max-height: 100%;
+    height: 400px;
     background: url(../images/aboutMe01.png);
     background-size: cover;
   }
@@ -130,7 +131,8 @@ body {
   p {
     text-align: justify;
     font-size: 20px;
-    font-family: 'Quicksand';
+    //font-family: 'Quicksand';
+    letter-spacing: 0.5px;
   }
   p:nth-child(3) {
     font-weight: bold;

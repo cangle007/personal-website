@@ -11,19 +11,21 @@ export default class ProjectsComponent extends Component {
   render() {
     let { projects } = this.props;
     return (
-      <div className="projects-container">
-        {projects &&
-          projects.map((obj, i) => {
-            return (
-              <div className={obj.name} id={i} key={i}>
-                <img className="visible" alt={obj.name} src={obj.file} />
-                <div className={obj.hover} id="hidden">
-                  <h2>{obj.name}</h2>
-                  <p>{obj.display}</p>
+      <div className="projects-wrapper">
+        <div className="projects-container">
+          {projects &&
+            projects.map((obj, i) => {
+              return (
+                <div className={obj.name} id="listOfProjects" key={i}>
+                  <img className="visible" alt={obj.name} src={obj.file} />
+                  <div className={obj.hover} id="hidden">
+                    <h2>{obj.name}</h2>
+                    <p>{obj.display}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+        </div>
       </div>
     );
   }

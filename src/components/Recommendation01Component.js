@@ -4,7 +4,6 @@ export default function Recommendation01Component() {
   return (
     <div className="recommendation-wrapper">
       <div className="recommendation-container">
-        {/* <p id="recommendation-header">PERSONAL RECOMMENDATIONS</p> */}
         <p id="recommendation-paragraph">
           "Cang is self motivated and willing to contribute at the drop of a
           hat. It is a pleasure working with him as he is always ready to learn

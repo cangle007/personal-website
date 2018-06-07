@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Icon, Divider } from 'semantic-ui-react';
 import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
-import imgMe from '../images/aboutMe01.png';
 
 export default class AboutMeComponent extends Component {
   constructor(props) {
@@ -11,13 +10,6 @@ export default class AboutMeComponent extends Component {
       ariaExpanded: false
     };
   }
-
-  headerToggle = () => {
-    //let { ariaExpanded } = this.state;
-    this.setState(prevState => ({
-      ariaExpanded: !prevState.ariaExpanded
-    }));
-  };
 
   render() {
     return (

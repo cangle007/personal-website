@@ -12,7 +12,6 @@ export default function getAllProjectsProcess() {
         image: pokemonBattle,
         type: 'website',
         projectname: 'PokemonBattle'
-        //webpage: `${ProjectPokemonBattleComponent}`
       },
       {
         image: toDos,

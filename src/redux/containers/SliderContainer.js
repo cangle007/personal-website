@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import SliderPage from '../../components/SliderPage';
 
 function mapStateToProps(state, ownProps) {
-  return { logoImages: state.logoImages };
+  return {};
 }
 
 function mapDispatchToProps(dispatch, ownProps) {

@@ -1,10 +1,10 @@
 import React from 'react';
 import SliderComponent from './SliderComponent';
 
-export default function SliderPage({ logoImages }) {
+export default function SliderPage() {
   return (
     <div>
-      <SliderComponent logoImages={logoImages} />
+      <SliderComponent />
     </div>
   );
 }

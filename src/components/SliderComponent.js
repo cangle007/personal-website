@@ -41,7 +41,7 @@ export default class SliderComponent extends Component {
   componentDidMount = () => {
     window.setInterval(() => {
       this.goToNextSlide();
-    }, 7000);
+    }, 6000);
   };
 
   render() {

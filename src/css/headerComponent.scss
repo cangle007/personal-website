@@ -19,8 +19,6 @@ body {
   display: grid;
   grid-template-areas: 'full-name-logo navi';
   grid-template-columns: repeat(2, 1fr);
-  //border: 1px solid black;
-  //background-color: pink;
   #full-name-logo {
     display: grid;
     grid-template-columns: repeat(auto, minmax(min-content, min-content));
@@ -29,7 +27,6 @@ body {
     width: 400px;
     height: 100px;
     font-size: 35px;
-    //background-color: blue;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
       0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
       0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -46,7 +43,6 @@ body {
   }
   #navi {
     grid-area: navi;
-    //background-color: yellow;
   }
 }
 
@@ -54,12 +50,10 @@ body {
   display: grid;
   grid-template-areas: 'navi-home navi-about navi-contact navi-LinkedIn';
   grid-template-columns: repeat(4, 1fr);
-  //border: 1px solid black;
   grid-column-gap: 15px;
   margin-left: 300px;
   margin-right: 150px;
   a {
-    //border: 1px solid red;
     padding-top: 40px;
     font-size: 20px;
   }
@@ -110,93 +104,3 @@ body {
       'navi-LinkedIn';
   }
 }
-
-// [aria-controls='header-list'] {
-//   display: none;
-// }
-
-// $header-logo-text-color: black;
-// $header-nav-text: black;
-// $header-nav-text-size: 25px;
-// // $header-transparent: rgba(0, 0, 0, 0.5);
-// $header-transparent: white;
-// body {
-//   color: black;
-//   margin: 0;
-// }
-//
-// //Header
-// .wrapper-header {
-//   z-index: 1;
-//   position: fixed;
-//   width: 100%;
-//   height: 100px;
-//   background: $header-transparent;
-//   .header-container {
-//     display: flex;
-//     height: 90px;
-//     padding-top: 22px;
-//     //align-items: center;
-//     text-decoration: none;
-//     // background: $header-transparent;
-//   }
-//
-//   #logo {
-//     padding-left: 50px;
-//     #logo-link {
-//       display: block;
-//       letter-spacing: 2px;
-//       font-family: 'Quicksand';
-//       font-size: 50px;
-//     }
-//     #lassName {
-//       font-weight: bold;
-//     }
-//   }
-//
-//   .nav {
-//     margin-left: auto;
-//     font-family: 'Quicksand', sans-serif;
-//     letter-spacing: 1px;
-//     font-size: $header-nav-text-size;
-//     padding-right: 50px;
-//     .navLink {
-//       color: $header-nav-text;
-//       padding: 0.5rem 1rem;
-//       text-decoration: none;
-//       &:hover {
-//         color: red;
-//       }
-//     }
-//   }
-// }
-//
-// //HEADER LIST DISPLAY WHEN SCALE DOWN
-// [aria-controls='header-list'] {
-//   display: none;
-// }
-//
-// @media (max-width: 1000px) {
-//   .nav {
-//     order: -1;
-//     perspective: 800px;
-//   }
-//
-//   [aria-controls='header-list'] {
-//     display: block;
-//     margin-bottom: 10px;
-//   }
-//
-//   .nav ul {
-//     max-height: 0;
-//     overflow: hidden;
-//     transform: rotateX(90deg);
-//     transition: all 0.5s;
-//   }
-//
-//   [aria-expanded='true'] ~ ul {
-//     display: grid;
-//     max-height: 500px;
-//     transform: rotateX(0);
-//   }
-// }

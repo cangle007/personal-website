@@ -6,9 +6,7 @@ import FooterComponent from './FooterComponent';
 export default class AboutMeComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      ariaExpanded: false
-    };
+    this.state = {};
   }
 
   render() {
@@ -17,9 +15,7 @@ export default class AboutMeComponent extends Component {
         <HeaderComponent />
         <div className="aboutMe-container">
           <div className="aboutMe-grid">
-            <div id="aboutMe-img">
-              {/* <img alt="cang" id="aboutMe-photo" src={imgMe} /> */}
-            </div>
+            <div id="aboutMe-img" />
             <div id="aboutMe-bio">
               <h3>About Cang Le</h3>
               <div>

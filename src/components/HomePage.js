@@ -1,10 +1,10 @@
 import React from 'react';
 import HomeComponent from './HomeComponent';
 
-export default function HomePage({ logoImages, projects }) {
+export default function HomePage({ projects }) {
   return (
     <div>
-      <HomeComponent logoImages={logoImages} projects={projects} />
+      <HomeComponent projects={projects} />
     </div>
   );
 }

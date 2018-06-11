@@ -7,12 +7,10 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import HomeContainer from './redux/containers/HomeContainer';
 import HeaderContainer from './redux/containers/HeaderContainer';
 import SliderContainer from './redux/containers/SliderContainer';
-import ProjectsContainer from './redux/containers/ProjectsContainer';
+import DisplayAllProjectsContainer from './redux/containers/DisplayAllProjectsContainer';
 import AboutMeContainer from './redux/containers/AboutMeContainer';
-import CompaniesWorkedContainer from './redux/containers/CompaniesWorkedContainer';
 import ProjectPokemonBattleContainer from './redux/containers/ProjectPokemonBattleContainer';
 import ProjectToDosContainer from './redux/containers/ProjectToDosContainer';
-import ToggleProjectsContainer from './redux/containers/ToggleProjectsContainer';
 import ProjectResponsiveWebContainer from './redux/containers/ProjectResponsiveWebContainer';
 import ProjectPixelArtContainer from './redux/containers/ProjectPixelArtContainer';
 import ProjectUserProfileContainer from './redux/containers/ProjectUserProfileContainer';
@@ -71,28 +69,18 @@ export default class App extends Component {
                 component={ProjectGmailInboxContainer}
                 history={history}
               />
-              <Route
-                exact
-                path="/toggleprojects"
-                component={ToggleProjectsContainer}
-                history={history}
-              />
+
               <Route
                 exact
                 path="/about"
                 component={AboutMeContainer}
                 history={history}
               />
-              <Route
-                exact
-                path="/company"
-                component={CompaniesWorkedContainer}
-                history={history}
-              />
+
               <Route
                 exact
                 path="/projects"
-                component={ProjectsContainer}
+                component={DisplayAllProjectsContainer}
                 history={history}
               />
               <Route

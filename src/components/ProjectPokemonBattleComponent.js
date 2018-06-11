@@ -11,10 +11,7 @@ import giphy from '../images/giphy.gif';
 export default class ProjectPokemonBattleComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      placeholder: 'plaeholder',
-      currentComponent: 'pokemonBattle'
-    };
+    this.state = {};
   }
 
   render() {

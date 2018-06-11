@@ -8,9 +8,7 @@ import ToggleProjectsComponent from './ToggleProjectsComponent';
 export default class ProjectResponsiveWebComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      placeholder: 'plaeholder'
-    };
+    this.state = {};
   }
 
   render() {

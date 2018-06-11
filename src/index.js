@@ -6,7 +6,7 @@ import './css/bannerComponent.min.css';
 import './css/footerComponent.min.css';
 import './css/parallax01Component.min.css';
 import './css/recommendationComponent.min.css';
-import './css/projectsComponent.min.css';
+import './css/displayAllProjectsComponent.min.css';
 import './css/aboutMeComponent.min.css';
 import './css/companiesWorkedComponent.min.css';
 import './css/projectPokemonBattleComponent.min.css';

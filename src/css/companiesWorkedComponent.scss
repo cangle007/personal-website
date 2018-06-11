@@ -1,6 +1,5 @@
 .companies-wrapper {
   p {
-    //padding-top: 100px;
     margin-top: 100px;
     text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
       1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
@@ -15,24 +14,16 @@
 .companies-container {
   display: grid;
   grid-template-areas: 'cgi sunedison veritas wellsfargo01 outside2inside';
-  // grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   grid-template-columns: repeat(5, auto);
   grid-template-rows: auto;
   padding-left: 150px;
   padding-right: 150px;
-  //height: 60px;
-  // border: 1px solid black;
-  //width: auto;
-  //align-items: stretch;
-  //text-align: center;
+
   div {
     text-align: center;
-    // border: 1px solid black;
     padding: 20px;
     img {
-      // border: 1px solid black;
       height: 80px;
-      //width: 500px;
     }
   }
 

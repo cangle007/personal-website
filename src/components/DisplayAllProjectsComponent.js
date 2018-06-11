@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
-export default class ProjectsComponent extends Component {
+export default class DisplayAllProjectsComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      placeholder: 'plaeholder'
-    };
+    this.state = {};
   }
 
   render() {

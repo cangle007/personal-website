@@ -21,8 +21,8 @@
   #responsiveWeb-body1 {
     text-align: center;
     grid-area: responsiveWeb-body1;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     background-color: lighten(#0b6171, 5%);
     img {
       height: 700px;
@@ -31,11 +31,11 @@
   #responsiveWeb-body2 {
     text-align: center;
     grid-area: responsiveWeb-body2;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     background-color: lighten(#0b6171, 5%);
     img {
-      height: 780px;
+      height: 650px;
     }
   }
 }

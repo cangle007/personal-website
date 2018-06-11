@@ -71,8 +71,8 @@
   #PokemonBattle-body3 {
     grid-area: PokemonBattle-body3;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     background-color: lighten(#0b6171, 5%);
     img {
       height: 1000px;
@@ -82,8 +82,8 @@
   #PokemonBattle-body2 {
     grid-area: PokemonBattle-body2;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: white;
     img {
       height: 500px;
@@ -95,8 +95,8 @@
     grid-template-columns: auto auto;
     grid-template-areas: 'pokemonBattleDisplay01 pokemonBattleDisplay02';
     background-color: lighten(#0b6171, 5%);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     #pokemonBattleDisplay01 {
       text-align: center;
       img:nth-child(1) {

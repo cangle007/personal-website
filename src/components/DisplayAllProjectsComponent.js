@@ -14,7 +14,10 @@ export default class DisplayAllProjectsComponent extends Component {
           {projects &&
             projects.map((obj, i) => {
               return (
-                <a href={'/' + obj.projectname} className={obj.projectname}>
+                <a
+                  key={i}
+                  href={'/' + obj.projectname}
+                  className={obj.projectname}>
                   <div id="listOfProjects" key={i}>
                     <img alt={obj.projectname} src={obj.image} />
                     <h2>{obj.projectname}</h2>

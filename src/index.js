@@ -13,6 +13,8 @@ import './css/projectPokemonBattleComponent.min.css';
 import './css/projectToDosComponent.min.css';
 import './css/toggleProjectsComponent.min.css';
 import './css/projectResponsiveWebComponent.min.css';
+import './css/projectPixelArtComponent.min.css';
+import './css/projectUserProfileComponent.min.css';
 
 import App from './App';
 

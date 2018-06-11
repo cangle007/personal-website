@@ -1,0 +1,30 @@
+.pixelArt-container {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'pixelArt-header'
+    'pixelArt-body1';
+
+  #pixelArt-header {
+    text-align: center;
+  }
+  #pixelArt-techStatus {
+    display: inline-block;
+    list-style: none;
+    ul {
+      list-style-type: none;
+      float: left;
+    }
+  }
+  #pixelArt-body1 {
+    text-align: center;
+    grid-area: pixelArt-body1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    img {
+      height: 700px;
+    }
+  }
+}

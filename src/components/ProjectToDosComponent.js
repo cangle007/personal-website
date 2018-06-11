@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
-import todosWeb from '../images/todosWeb.png';
 import todosgiphy from '../images/todosgiphy.gif';
 import ToggleProjectsComponent from './ToggleProjectsComponent';
 
@@ -33,7 +32,7 @@ export default class ProjectToDosComponent extends Component {
               </ul>
               <ul>
                 <li>
-                  <strong>TECHNOLOGIES:</strong> React-Redux, SCSS
+                  <strong>TECHNOLOGIES:</strong> React-Redux, Scss/Sass
                 </li>
                 <li>
                   <strong>SERVICES:</strong> Webdesign, Front-end development,
@@ -41,18 +40,9 @@ export default class ProjectToDosComponent extends Component {
               </ul>
             </div>
           </div>
-          <div id="PokemonBattle-body2">
+          <div id="toDos-body1">
             <img alt="pokemonCreateDecks" src={todosgiphy} />
           </div>
-          {/* <div id="PokemonBattle-body3">
-            <img alt="pokemonBattleNow" src={pokemonBattleNow} />
-            <br />
-            <br />
-            <img alt="giphy" src={giphy} />
-          </div>
-          <div id="PokemonBattle-body1">
-            <img alt="pokemonBattling" src={pokemonBattling} />
-          </div> */}
         </div>
         <ToggleProjectsComponent
           nextComponent={'ResponsiveWeb'}

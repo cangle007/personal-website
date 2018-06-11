@@ -20,7 +20,7 @@ export default class ProjectResponsiveWebComponent extends Component {
         <div className="responsiveWeb-container">
           <div id="responsiveWeb-header">
             <h1>Responsive Web</h1>
-            <h3>A responsive web based on 2-dimensional css-grid system</h3>
+            <h3>App. based on 2-dimensional css-grid system</h3>
             <div id="responsiveWeb-techStatus">
               <ul>
                 <li>
@@ -35,7 +35,7 @@ export default class ProjectResponsiveWebComponent extends Component {
               </ul>
               <ul>
                 <li>
-                  <strong>TECHNOLOGIES:</strong> React-Redux, SCSS/SASS
+                  <strong>TECHNOLOGIES:</strong> React-Redux, Scss/Sass
                 </li>
                 <li>
                   <strong>SERVICES:</strong> Webdesign, Front-end development,
@@ -50,7 +50,10 @@ export default class ProjectResponsiveWebComponent extends Component {
             <img alt="responsiveWeb02" src={responsiveWeb02} />
           </div>
         </div>
-        <ToggleProjectsComponent previousComponent={'ToDos'} />
+        <ToggleProjectsComponent
+          nextComponent={'PixelArt'}
+          previousComponent={'ToDos'}
+        />
         <FooterComponent />
       </div>
     );

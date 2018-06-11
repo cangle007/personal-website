@@ -1,0 +1,41 @@
+.userProfile-container {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'userProfile-header'
+    'userProfile-body1'
+    'userProfile-body2';
+
+  #userProfile-header {
+    text-align: center;
+  }
+  #userProfile-techStatus {
+    display: inline-block;
+    list-style: none;
+    ul {
+      list-style-type: none;
+      float: left;
+    }
+  }
+  #userProfile-body1 {
+    text-align: center;
+    grid-area: userProfile-body1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lighten(#0b6171, 5%);
+    img {
+      height: 700px;
+    }
+  }
+  #userProfile-body2 {
+    text-align: center;
+    grid-area: userProfile-body2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lighten(#0b6171, 5%);
+    img {
+      height: 780px;
+    }
+  }
+}

@@ -7,9 +7,7 @@ import ToggleProjectsComponent from './ToggleProjectsComponent';
 export default class ProjectToDosComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      placeholder: 'plaeholder'
-    };
+    this.state = {};
   }
 
   render() {
@@ -46,7 +44,7 @@ export default class ProjectToDosComponent extends Component {
         </div>
         <ToggleProjectsComponent
           nextComponent={'ResponsiveWeb'}
-          previousComponent={'pokemonBattle'}
+          previousComponent={'PokemonBattle'}
         />
         <FooterComponent />
       </div>

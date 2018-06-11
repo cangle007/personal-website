@@ -16,6 +16,7 @@ import ToggleProjectsContainer from './redux/containers/ToggleProjectsContainer'
 import ProjectResponsiveWebContainer from './redux/containers/ProjectResponsiveWebContainer';
 import ProjectPixelArtContainer from './redux/containers/ProjectPixelArtContainer';
 import ProjectUserProfileContainer from './redux/containers/ProjectUserProfileContainer';
+import ProjectGmailInboxContainer from './redux/containers/ProjectGmailInboxContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -61,6 +62,12 @@ export default class App extends Component {
                 exact
                 path="/UserProfile"
                 component={ProjectUserProfileContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/Gmail-Inbox"
+                component={ProjectGmailInboxContainer}
                 history={history}
               />
               <Route

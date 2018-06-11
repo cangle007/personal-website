@@ -2,24 +2,17 @@ import { compose, lifecycle } from 'recompose';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import ToggleProjectsPage from '../../components/ToggleProjectsPage';
-import getAllProjectsProcess from '../thunks/getAllProjectsProcess';
 
 function mapStateToProps(state, ownProps) {
-  return { projects: state.projects };
+  return {};
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
-  return {
-    getAllProjects: () => {
-      dispatch(getAllProjectsProcess());
-    }
-  };
+  return {};
 }
 
 const withlifecycle = lifecycle({
-  componentDidMount(prevProps, prevState) {
-    this.props.getAllProjects();
-  }
+  componentDidMount(prevProps, prevState) {}
 });
 
 const connectToStore = connect(mapStateToProps, mapDispatchToProps);

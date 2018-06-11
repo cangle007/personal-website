@@ -3,14 +3,11 @@ import React, { Component } from 'react';
 export default class ToggleProjectsComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      index: 0
-    };
+    this.state = {};
   }
 
   render() {
-    let { projects, previousComponent, nextComponent } = this.props;
-    console.log('this pros------', this.props);
+    let { previousComponent, nextComponent } = this.props;
     return (
       <div className="toggleProjects-wrapper">
         <div className="toggleProjects-container">

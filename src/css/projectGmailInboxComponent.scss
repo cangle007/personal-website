@@ -1,0 +1,41 @@
+.gmailInbox-container {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'gmailInbox-header'
+    'gmailInbox-body1'
+    'userProfile-body2';
+
+  #gmailInbox-header {
+    text-align: center;
+  }
+  #gmailInbox-techStatus {
+    display: inline-block;
+    list-style: none;
+    ul {
+      list-style-type: none;
+      float: left;
+    }
+  }
+  #gmailInbox-body1 {
+    text-align: center;
+    grid-area: gmailInbox-body1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    img {
+      height: 700px;
+    }
+  }
+  #userProfile-body2 {
+    text-align: center;
+    grid-area: userProfile-body2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    img {
+      height: 780px;
+    }
+  }
+}

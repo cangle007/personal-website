@@ -3,7 +3,7 @@ import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
 import ToggleProjectsComponent from './ToggleProjectsComponent';
 import userProfile02 from '../images/userProfile02.gif';
-import userProfileDisplay from '../images/userProfileDisplay.png';
+import userProfile01 from '../images/userProfile01.png';
 
 export default class ProjectUserProfileComponent extends Component {
   constructor(props) {
@@ -48,7 +48,7 @@ export default class ProjectUserProfileComponent extends Component {
             </div>
           </div>
           <div id="userProfile-body1">
-            <img alt="responsiveWeb01" src={userProfileDisplay} />
+            <img alt="responsiveWeb01" src={userProfile01} />
           </div>
           <div id="userProfile-body2">
             <img alt="responsiveWeb02" src={userProfile02} />

@@ -51,7 +51,7 @@ export default class ProjectPokemonBattleComponent extends Component {
               </ul>
               <ul>
                 <li>
-                  <strong>TECHNOLOGIES:</strong> React-Redux, Semantic UI,
+                  <strong>TECHNOLOGIES:</strong> React-Redux, Semantic-Ui,
                   PostgreSQL, Socket.io
                 </li>
                 <li>
@@ -77,8 +77,8 @@ export default class ProjectPokemonBattleComponent extends Component {
           </div>
         </div>
         <ToggleProjectsComponent
-          currentComponent={this.state.currentComponent}
-          nextComponent={'todos'}
+          nextComponent={'ToDos'}
+          previousComponent={'Gmail-Inbox'}
         />
         <FooterComponent />
       </div>

@@ -1,1 +1,122 @@
-body{font-family:'Lato', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans'}.wrapper-AboutMe{text-align:center}.aboutMe-container{padding-left:150px;padding-right:150px;padding-top:150px}.aboutMe-grid{display:grid;grid-template-areas:'aboutMe-img aboutMe-bio';grid-template-columns:1fr auto;grid-gap:20px;font-size:17px;letter-spacing:0.5px}.aboutMe-grid #aboutMe-img{grid-area:aboutMe-img;object-fit:cover;width:400px;height:400px;background:url(../images/aboutMe01.png);background-size:cover}.aboutMe-grid #aboutMe-bio{grid-area:aboutMe-bio;text-align:justify}.aboutMe-grid #aboutMe-bio h3{text-align:center}@media (max-width: 1000px){.aboutMe-container{padding-left:10px;padding-right:10px}.aboutMe-grid{grid-template-areas:'aboutMe-bio' 'aboutMe-img'}.aboutMe-grid #aboutMe-img{display:none}}.expertise-container{padding-left:150px;padding-right:150px}.expertise-divider{padding-top:100px;padding-bottom:20px}.expertise-grid{display:grid;grid-template-areas:'Front-End Back-End Others';grid-template-columns:repeat(3, 1fr);padding-bottom:100px}.expertise-grid .Back-End{grid-area:Back-End}.expertise-grid .Front-End{grid-area:Front-End}.expertise-grid .Others{grid-area:Others}.expertise-grid .Back-End ul,.expertise-grid .Front-End ul,.expertise-grid .Others ul{line-height:180%;list-style-type:none}@media (max-width: 1000px){.expertise-grid{grid-template-areas:'Front-End Back-End' 'Others'}}@media (max-width: 700px){.expertise-grid{grid-template-areas:'Front-End' 'Back-End' 'Others'}}.parallax02-mgs{background:url(../images/halfdome01.jpg);background-size:cover;background-position:center;background-attachment:fixed;min-height:250px;color:white;text-align:center;position:relative;padding-top:100px;text-shadow:2px 2px 4px #000000}.parallax02-mgs h1{font-family:'Roboto Slab', serif;font-size:50px}#funFacts{padding-left:150px;padding-right:150px;padding-top:100px;padding-bottom:100px}#funFacts p{text-align:justify;font-size:20px;letter-spacing:0.5px}#funFacts p:nth-child(3){font-weight:bold}@media (max-width: 700px){#funFacts{padding-left:10px;padding-right:10px}}
+body {
+  font-family: 'Lato', 'BlinkMacSystemFont', -apple-system, 'Roboto',
+    'Lucida Sans';
+}
+.wrapper-AboutMe {
+  text-align: center;
+}
+.aboutMe-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 150px;
+}
+.aboutMe-grid {
+  display: grid;
+  grid-template-areas: 'aboutMe-img aboutMe-bio';
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+.aboutMe-grid #aboutMe-img {
+  grid-area: aboutMe-img;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  background: url(../images/aboutMe01.png);
+  background-size: cover;
+}
+.aboutMe-grid #aboutMe-bio {
+  grid-area: aboutMe-bio;
+  text-align: justify;
+}
+.aboutMe-grid #aboutMe-bio h3 {
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .aboutMe-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .aboutMe-grid {
+    grid-template-areas: 'aboutMe-bio' 'aboutMe-img';
+  }
+  .aboutMe-grid #aboutMe-img {
+    display: none;
+  }
+}
+.expertise-container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.expertise-divider {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.expertise-grid {
+  display: grid;
+  grid-template-areas: 'Front-End Back-End Others';
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 100px;
+}
+.expertise-grid .Back-End {
+  grid-area: Back-End;
+}
+.expertise-grid .Front-End {
+  grid-area: Front-End;
+}
+.expertise-grid .Others {
+  grid-area: Others;
+}
+.expertise-grid .Back-End ul,
+.expertise-grid .Front-End ul,
+.expertise-grid .Others ul {
+  line-height: 180%;
+  list-style-type: none;
+}
+@media (max-width: 1000px) {
+  .expertise-grid {
+    grid-template-areas: 'Front-End Back-End' 'Others';
+  }
+}
+@media (max-width: 700px) {
+  .expertise-grid {
+    grid-template-areas: 'Front-End' 'Back-End' 'Others';
+  }
+}
+.parallax02-mgs {
+  background: url(../images/halfdome01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 250px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.parallax02-mgs h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+}
+#funFacts {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#funFacts p {
+  text-align: justify;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+#funFacts p:nth-child(3) {
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  #funFacts {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

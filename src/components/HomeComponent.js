@@ -11,9 +11,18 @@ export default class HomeComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      placeholder: 'plaeholder'
+      placeholder: 'plaeholder',
+      counter: 0
     };
   }
+
+  // click = () => {
+  //   let { counter } = this.state;
+  //   let arr = [1, 2, 3, 4, 5, 6];
+  //   if (counter !== 7) {
+  //     this.setState({ placeholder: arr[counter], counter: (counter += 1) });
+  //   }
+  // };
 
   render() {
     let { projects } = this.props;

@@ -1,48 +1,43 @@
-import pokemonBattle from '../../images/pokemonBattle.png';
-import userProfile from '../../images/userProfile.png';
-import toDos from '../../images/toDos.png';
-import gmailInbox from '../../images/gmailInbox.png';
-import pixelArt from '../../images/pixelArt.png';
-import responsiveWeb from '../../images/responsiveWeb.png';
+import pokemonBattle from '../../images/pokemonBattleDisplay.png';
+import userProfile from '../../images/userProfileDisplay.png';
+import toDos from '../../images/toDosDisplay.png';
+import gmailInbox from '../../images/gmailInboxDisplay.png';
+import pixelArt from '../../images/pixelArtDisplay.png';
+import responsiveWeb from '../../images/responsiveWebDisplay.png';
 
 export default function getAllProjectsProcess() {
   return (dispatch, getState) => {
     let arr = [
       {
-        file: pokemonBattle,
-        display: 'website',
-        name: 'PokemonBattle',
-        hover: 'hidden-pokemonBattle'
+        image: pokemonBattle,
+        type: 'website',
+        projectname: 'PokemonBattle'
+        //webpage: `${ProjectPokemonBattleComponent}`
       },
       {
-        file: toDos,
-        display: 'mobile',
-        name: 'ToDos',
-        hover: 'hidden-toDos'
+        image: toDos,
+        type: 'mobile',
+        projectname: 'ToDos'
       },
       {
-        file: gmailInbox,
-        display: 'website',
-        name: 'Gmail-Inbox',
-        hover: 'hidden-gmailInbox'
+        image: responsiveWeb,
+        type: 'website & mobile',
+        projectname: 'ResponsiveWeb'
       },
       {
-        file: pixelArt,
-        display: 'website',
-        name: 'PixelArt',
-        hover: 'hidden-pixelArt'
+        image: pixelArt,
+        type: 'website',
+        projectname: 'PixelArt'
       },
       {
-        file: userProfile,
-        display: 'mobile',
-        name: 'UserProfile',
-        hover: 'hidden-userProfile'
+        image: userProfile,
+        type: 'mobile',
+        projectname: 'UserProfile'
       },
       {
-        file: responsiveWeb,
-        display: 'website & mobile',
-        name: 'ResponsiveWeb',
-        hover: 'hidden-responsiveWeb'
+        image: gmailInbox,
+        type: 'website',
+        projectname: 'Gmail-Inbox'
       }
     ];
     dispatch({ type: 'GET_ALL_PROJECTS', projects: arr });

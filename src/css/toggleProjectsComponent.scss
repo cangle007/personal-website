@@ -1,0 +1,35 @@
+.toggleProjects-container {
+  display: grid;
+  grid-template-areas: 'previousProject currentProject NextProject';
+  grid-template-columns: 200px 1fr 200px;
+  height: 60px;
+
+  a {
+    color: black;
+    border: 1px solid black;
+    padding-top: 20px;
+
+    p {
+      line-height: 20%;
+      font-size: 11px;
+    }
+    p:nth-child(2) {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+
+  #previousProject {
+    text-align: right;
+    color: black;
+    &:hover p:nth-child(2) {
+      color: red;
+    }
+  }
+  #nextProject {
+    text-align: left;
+    &:hover p:nth-child(2) {
+      color: red;
+    }
+  }
+}

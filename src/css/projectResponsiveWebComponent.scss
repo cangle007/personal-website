@@ -1,0 +1,41 @@
+.responsiveWeb-container {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'responsiveWeb-header'
+    'responsiveWeb-body1'
+    'responsiveWeb-body2';
+
+  #responsiveWeb-header {
+    text-align: center;
+  }
+  #responsiveWeb-techStatus {
+    display: inline-block;
+    list-style: none;
+    ul {
+      list-style-type: none;
+      float: left;
+    }
+  }
+  #responsiveWeb-body1 {
+    text-align: center;
+    grid-area: responsiveWeb-body1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lighten(#0b6171, 5%);
+    img {
+      height: 700px;
+    }
+  }
+  #responsiveWeb-body2 {
+    text-align: center;
+    grid-area: responsiveWeb-body2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lighten(#0b6171, 5%);
+    img {
+      height: 780px;
+    }
+  }
+}

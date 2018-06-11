@@ -1,6 +1,49 @@
+// .header-container {
+//   display: grid;
+//   grid-template-columns: repeat(3, 150px);
+//   grid-template-areas: 'home login about';
+//   border: 1px solid black;
+//   background-color: black;
+//   color: white;
+//   height: 100px;
+//   justify-content: end;
+//   #home,
+//   #login,
+//   #about {
+//     background-color: orange;
+//     text-align: center;
+//     padding: 30px;
+//   }
+// }
+//
+// .banner-container {
+//   display: grid;
+//   grid-template-areas:
+//     'partOne partOne partTwo'
+//     'partOne partOne partThree';
+//   grid-gap: 10px;
+//   padding-top: 110px;
+//   div {
+//     border: 1px solid black;
+//   }
+//   #partOne {
+//     grid-area: partOne;
+//     height: 400px;
+//     background-color: blue;
+//   }
+//   #partTwo {
+//     grid-area: partTwo;
+//     background-color: green;
+//   }
+//   #partThree {
+//     grid-area: partThree;
+//     background-color: teal;
+//   }
+// }
+
 .PokemonBattle-container {
-  padding-top: 150px;
   display: grid;
+  padding-top: 150px;
   grid-template-columns: 1fr;
   grid-template-areas:
     'PokemonBattle-header'
@@ -14,6 +57,7 @@
   }
 
   #PokemonBattle-header {
+    grid-area: PokemonBattle-header;
     text-align: center;
   }
   #PokemonBattle-techStatus {
@@ -25,35 +69,50 @@
     }
   }
 
-  #PokemonBattle-body1 {
-    img {
-      height: 700px;
-    }
+  #PokemonBattle-body3 {
+    grid-area: PokemonBattle-body3;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: lighten(#0b6171, 5%);
+    img {
+      height: 1000px;
+    }
   }
 
   #PokemonBattle-body2 {
-    img {
-      height: 780px;
-    }
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: lighten(#0b6171, 5%);
-  }
-  #PokemonBattle-body3 {
+    grid-area: PokemonBattle-body2;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: white;
-    img:nth-child(1) {
-      height: 550px;
+    img {
+      height: 500px;
     }
-    img:nth-child(2) {
-      height: 550px;
+  }
+  #PokemonBattle-body1 {
+    display: grid;
+    grid-area: PokemonBattle-body1;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'pokemonBattleDisplay01 pokemonBattleDisplay02';
+    background-color: lighten(#0b6171, 5%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    #pokemonBattleDisplay01 {
+      text-align: center;
+      img:nth-child(1) {
+        height: 650px;
+      }
+    }
+    #pokemonBattleDisplay02 {
+      img:nth-child(1) {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+      }
     }
   }
 }

@@ -1,0 +1,59 @@
+.toDos-container {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'todos-header'
+    'PokemonBattle-body1'
+    'PokemonBattle-body2'
+    'PokemonBattle-body3'
+    'PokemonBattle-body4';
+
+  div {
+    //border: 1px solid black;
+  }
+
+  #todos-header {
+    text-align: center;
+  }
+  #toDos-techStatus {
+    display: inline-block;
+    list-style: none;
+    ul {
+      list-style-type: none;
+      float: left;
+    }
+  }
+
+  #PokemonBattle-body1 {
+    img {
+      height: 700px;
+    }
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lighten(#0b6171, 5%);
+  }
+
+  #PokemonBattle-body2 {
+    img {
+      height: 780px;
+    }
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+  }
+  #PokemonBattle-body3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    img:nth-child(1) {
+      height: 550px;
+    }
+    img:nth-child(2) {
+      height: 550px;
+    }
+  }
+}

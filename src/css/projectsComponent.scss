@@ -1,6 +1,8 @@
 .projects-wrapper {
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .projects-container {
@@ -8,9 +10,10 @@
   grid-template-areas:
     '1 2 3'
     '4 5 6';
-  grid-gap: 15px;
+  //grid-gap: 15px;
   grid-template-rows: auto;
   font-family: 'Patrick Hand';
+
   #listOfProjects {
     padding-top: 50px;
     padding-bottom: 50px;

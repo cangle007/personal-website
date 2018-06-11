@@ -11,6 +11,9 @@ import ProjectsContainer from './redux/containers/ProjectsContainer';
 import AboutMeContainer from './redux/containers/AboutMeContainer';
 import CompaniesWorkedContainer from './redux/containers/CompaniesWorkedContainer';
 import ProjectPokemonBattleContainer from './redux/containers/ProjectPokemonBattleContainer';
+import ProjectToDosContainer from './redux/containers/ProjectToDosContainer';
+import ToggleProjectsContainer from './redux/containers/ToggleProjectsContainer';
+import ProjectResponsiveWebContainer from './redux/containers/ProjectResponsiveWebContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -30,8 +33,26 @@ export default class App extends Component {
               />
               <Route
                 exact
-                path="/pokemonBattle"
+                path="/PokemonBattle"
                 component={ProjectPokemonBattleContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/ToDos"
+                component={ProjectToDosContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/ResponsiveWeb"
+                component={ProjectResponsiveWebContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/toggleprojects"
+                component={ToggleProjectsContainer}
                 history={history}
               />
               <Route

@@ -9,15 +9,7 @@ export default class HeaderComponent extends Component {
     };
   }
 
-  // headerToggle = () => {
-  //   //let { ariaExpanded } = this.state;
-  //   this.setState(prevState => ({
-  //     ariaExpanded: !prevState.ariaExpanded
-  //   }));
-  // };
-
   render() {
-    // let { ariaExpanded } = this.state;
     return (
       <div className="header-container">
         <div className="header-grid">

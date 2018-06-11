@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
-import pokemonBattling from '../images/pokemonBattling.png';
-import pokemonCreateDecks from '../images/pokemonCreateDecks.png';
-import pokemonBattleNow from '../images/pokemonBattleNow.png';
+import pokeBattleWeb from '../images/pokeBattleWeb.png';
+import pokeCreateWeb from '../images/pokeCreateWeb.png';
+import pokeDisplayWeb from '../images/pokeDisplayWeb.png';
 import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
+import ToggleProjectsComponent from './ToggleProjectsComponent';
+
 import giphy from '../images/giphy.gif';
 
 export default class ProjectPokemonBattleComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      placeholder: 'plaeholder'
+      placeholder: 'plaeholder',
+      currentComponent: 'pokemonBattle'
     };
   }
 
   render() {
     return (
+      // <div className="wrapper">
+      //   <div className="header-container">
+      //     <p id="home">HOME</p>
+      //     <p id="login">LOGIN</p>
+      //     <p id="about">ABOUT ME</p>
+      //   </div>
+      //   <div className="banner-container">
+      //     <div id="partOne">partOne</div>
+      //     <div id="partTwo">partTwo</div>
+      //     <div id="partThree">partThree</div>
+      //   </div>
+      // </div>
       <div className="PokemonBattle-wrapper">
         <HeaderComponent />
         <div className="PokemonBattle-container">
@@ -46,19 +61,25 @@ export default class ProjectPokemonBattleComponent extends Component {
               </ul>
             </div>
           </div>
+          <div id="PokemonBattle-body1">
+            <div id="pokemonBattleDisplay01">
+              <img alt="pokemonBattleNow" src={pokeBattleWeb} />
+            </div>
+            <div id="pokemonBattleDisplay02">
+              <img alt="giphy" src={giphy} />
+            </div>
+          </div>
           <div id="PokemonBattle-body2">
-            <img alt="pokemonCreateDecks" src={pokemonCreateDecks} />
+            <img alt="pokemonBattling" src={pokeDisplayWeb} />
           </div>
           <div id="PokemonBattle-body3">
-            <img alt="pokemonBattleNow" src={pokemonBattleNow} />
-            <br />
-            <br />
-            <img alt="giphy" src={giphy} />
-          </div>
-          <div id="PokemonBattle-body1">
-            <img alt="pokemonBattling" src={pokemonBattling} />
+            <img alt="pokemonCreateDecks" src={pokeCreateWeb} />
           </div>
         </div>
+        <ToggleProjectsComponent
+          currentComponent={this.state.currentComponent}
+          nextComponent={'todos'}
+        />
         <FooterComponent />
       </div>
     );

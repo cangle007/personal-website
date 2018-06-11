@@ -2,23 +2,25 @@ import { compose, lifecycle } from 'recompose';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import DisplayAllProjectsPage from '../../components/DisplayAllProjectsPage';
-import getAllProjectsProcess from '../thunks/getAllProjectsProcess';
+//import getAllProjectsProcess from '../thunks/getAllProjectsProcess';
 
 function mapStateToProps(state, ownProps) {
-  return { projects: state.projects };
+  return {
+    // projects: state.projects
+  };
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
-    getAllProjects: () => {
-      dispatch(getAllProjectsProcess());
-    }
+    // getAllProjects: () => {
+    //   dispatch(getAllProjectsProcess());
+    // }
   };
 }
 
 const withlifecycle = lifecycle({
   componentDidMount(prevProps, prevState) {
-    this.props.getAllProjects();
+    // this.props.getAllProjects();
   }
 });
 

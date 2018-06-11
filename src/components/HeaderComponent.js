@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import resume from '../images/resume08.pdf';
 
 export default class HeaderComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      ariaExpanded: false
-    };
+    this.state = {};
   }
 
   render() {
@@ -25,7 +22,7 @@ export default class HeaderComponent extends Component {
             <a id="navi-about" className="naviLink" href="/about">
               About
             </a>
-            <a id="navi-contact" className="naviLink" href={resume} download>
+            <a id="navi-contact" className="naviLink" href="/resume">
               Resume
             </a>
             <a

@@ -16,6 +16,7 @@ import './css/projectResponsiveWebComponent.min.css';
 import './css/projectPixelArtComponent.min.css';
 import './css/projectUserProfileComponent.min.css';
 import './css/projectGmailInboxComponent.min.css';
+import './css/resumeComponent.min.css';
 
 import App from './App';
 

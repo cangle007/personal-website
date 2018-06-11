@@ -17,6 +17,7 @@ import ProjectResponsiveWebContainer from './redux/containers/ProjectResponsiveW
 import ProjectPixelArtContainer from './redux/containers/ProjectPixelArtContainer';
 import ProjectUserProfileContainer from './redux/containers/ProjectUserProfileContainer';
 import ProjectGmailInboxContainer from './redux/containers/ProjectGmailInboxContainer';
+import ResumeContainer from './redux/containers/ResumeContainer';
 
 const history = createBrowserHistory();
 const store = setupStore();
@@ -104,6 +105,12 @@ export default class App extends Component {
                 exact
                 path="/header"
                 component={HeaderContainer}
+                history={history}
+              />
+              <Route
+                exact
+                path="/resume"
+                component={ResumeContainer}
                 history={history}
               />
             </Switch>

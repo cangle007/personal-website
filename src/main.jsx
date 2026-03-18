@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+
 import './index.css';
 import './css/headerComponent.min.css';
 import './css/footerComponent.min.css';
@@ -18,6 +19,7 @@ import './css/projectUserProfileComponent.min.css';
 import './css/projectGmailInboxComponent.min.css';
 import './css/resumeComponent.min.css';
 
-import App from './App';
+import App from './App.jsx';
+const root = createRoot(document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
+root.render(<App />);
